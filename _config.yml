@@ -1,1 +1,15 @@
-theme: jekyll-theme-minimal
+title: 최 회계사의 텍스노트
+description: 세금 관련 이슈와 실무 사례를 기록하는 공간
+author: 최 회계사
+
+theme: minima
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+minima:
+  skin: classic
+  date_format: "%Y-%m-%d"
+
+permalink: /:year/:month/:day/:title/
