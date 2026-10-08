@@ -1,0 +1,28 @@
+---
+layout: home
+title: 홈
+---
+
+{% if site.tags.size > 0 %}
+{%- assign sorted_tags = site.tags | sort -%}
+{%- assign max_count = 0 -%}
+{%- for tag in sorted_tags -%}
+  {%- assign count = tag[1] | size -%}
+  {%- if count > max_count -%}{%- assign max_count = count -%}{%- endif -%}
+{%- endfor -%}
+
+<section class="tag-cloud">
+  <h2 class="tag-cloud-heading">태그</h2>
+  <ul class="tag-cloud-list">
+    {%- for tag in sorted_tags -%}
+    {%- assign count = tag[1] | size -%}
+    {%- assign scaled = count | times: 60 | divided_by: max_count | plus: 85 -%}
+    <li>
+      <a href="{{ '/tags/' | relative_url }}#{{ tag[0] | slugify }}" style="font-size: {{ scaled }}%;">
+        #{{ tag[0] }}<span class="tag-count">{{ count }}</span>
+      </a>
+    </li>
+    {%- endfor -%}
+  </ul>
+</section>
+{% endif %}

@@ -1,0 +1,40 @@
+---
+layout: page
+title: 태그
+permalink: /tags/
+---
+
+{%- assign sorted_tags = site.tags | sort -%}
+{%- assign max_count = 0 -%}
+{%- for tag in sorted_tags -%}
+  {%- assign count = tag[1] | size -%}
+  {%- if count > max_count -%}{%- assign max_count = count -%}{%- endif -%}
+{%- endfor -%}
+
+<section class="tag-cloud">
+  <ul class="tag-cloud-list">
+    {%- for tag in sorted_tags -%}
+    {%- assign count = tag[1] | size -%}
+    {%- assign scaled = count | times: 80 | divided_by: max_count | plus: 95 -%}
+    <li>
+      <a href="#{{ tag[0] | slugify }}" style="font-size: {{ scaled }}%;">
+        #{{ tag[0] }}<span class="tag-count">{{ count }}</span>
+      </a>
+    </li>
+    {%- endfor -%}
+  </ul>
+</section>
+
+{% for tag in sorted_tags %}
+<section class="tag-section" id="{{ tag[0] | slugify }}">
+  <h2>#{{ tag[0] }} <small>({{ tag[1] | size }})</small></h2>
+  <ul class="tag-post-list">
+    {% for post in tag[1] %}
+    <li>
+      <span class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
+      <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endfor %}
