@@ -4,11 +4,14 @@ title: "개인사업자 종합소득세, 사장님이 꼭 알아야 할 것"
 date: 2026-10-13 09:00:00 +0900
 categories: [메모]
 tags: [종합소득세, 중간예납, 장부, 노란우산공제, 공제, 경비처리]
+image: /assets/images/posts/income-tax-guide-sole-proprietor-1.jpg
 ---
 
 종합소득세는 5월에만 신경 쓰면 되는 세금이 아닙니다.
 **11월 중간예납**, 매출에 따라 바뀌는 **장부 의무**, 연말 전에 챙겨야 할 **공제**까지
 1년 내내 준비한 만큼 세금이 달라집니다. 핵심만 정리합니다.
+
+![서류철과 계산기, 연간 달력으로 표현한 종합소득세 준비](/assets/images/posts/income-tax-guide-sole-proprietor-1.jpg)
 
 ## 1. 신고·납부 일정
 

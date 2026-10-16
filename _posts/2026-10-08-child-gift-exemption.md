@@ -4,6 +4,7 @@ title: "자녀 증여세, 10년 공제를 활용해 2억 4천만 원까지 비�
 date: 2026-10-08
 categories: [사례]
 tags: [증여세, 공제, 자녀증여, 혼인출산공제]
+image: /assets/images/posts/2026-10-08-child-gift-exemption/01-hero.png
 ---
 
 ![아이 이름 통장에 넣은 돈, 누구 돈일까요?](/assets/images/posts/2026-10-08-child-gift-exemption/01-hero.png)
