@@ -10,7 +10,7 @@ layout: default
     </p>
     {%- if page.tags.size > 0 %}
     <p class="post-meta">태그:
-      {%- for tag in page.tags %} <a href="{{ '/tags/' | relative_url }}#{{ tag | slugify: 'raw' }}">#{{ tag }}</a>{% endfor %}
+      {%- for tag in page.tags %} <a href="{{ '/tags/' | relative_url }}#{{ tag | slugify }}">#{{ tag }}</a>{% endfor %}
     </p>
     {%- endif %}
   </header>
