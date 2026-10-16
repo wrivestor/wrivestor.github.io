@@ -6,9 +6,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is a personal tax-focused blog published at `https://wrivestor.github.io` using Jekyll + GitHub Pages.
 
-- **Title**: 최 회계사의 텍스노트 (Choi CPA's Tax Notes)
+- **Title**: 최 회계사의 세금과 경영 (Choi CPA's Tax & Management Notes)
 - **Theme**: `minima` (GitHub Pages supported)
-- **Topic**: 세금 관련 이슈 및 실무 사례 (Korean-language tax commentary and case notes)
+- **Topic**: 세금 이슈와 경영 숫자 (Korean-language tax and business-management notes)
 
 ## Repository structure
 
@@ -66,7 +66,7 @@ bundle exec jekyll serve --livereload   # http://localhost:4000
 
 - Posts are in Korean; keep that unless the user asks otherwise.
 - Each post should carry a tax-advice disclaimer when it discusses specific scenarios — the `about.md` page carries the general disclaimer, but individual sensitive posts may need their own.
-- Prefer categories like `공지`, `개정`, `사례`, `Q&A`, `메모` to match the planned taxonomy in the welcome post.
+- Prefer categories like `공지`, `개정`, `사례`, `Q&A`, `메모`, `경영` to match the planned taxonomy in the welcome post.
 
 ## Branching
 
